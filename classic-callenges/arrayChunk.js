@@ -28,12 +28,12 @@ const arrayChunk = (array, size) => {
 
 const chunk1 = (array, size) => {
     const chunked = [];
-    for (let elment of array) {
+    for (let element of array) {
         const lastElem = chunked[chunked.length - 1]; // in first traverse the lastElem will be undefined
         if (!lastElem || lastElem.length === size) {
-            chunked.push([elment]); // [[1]]
+            chunked.push([element]); // [[1]]
         } else {
-            lastElem.push(elment);
+            lastElem.push(element);
         }
     }
 
@@ -42,3 +42,20 @@ const chunk1 = (array, size) => {
 
 
 console.log(chunk1([1, 2, 3], 2));
+
+
+// another way 1 to sovle the arraychunk problem 
+
+const chunk2 = (array, size) => {
+    const chunked = [];
+    let index = 0;
+    while (index < array.length) {
+        chunked.push(array.slice(index, index + size));
+        index += size;
+    }
+
+    return chunked;
+};
+
+
+console.log(chunk2([1, 2, 3], 2));
