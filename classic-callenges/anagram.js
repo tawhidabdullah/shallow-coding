@@ -7,7 +7,7 @@ const getCharMaps = (str) => {
     return charMaps;
 };
 
-const isAnagram = (str1, str2) => {
+const isAnagrams1 = (str1, str2) => {
     const charMaps1 = getCharMaps(str1);
     const charMaps2 = getCharMaps(str2);
 
@@ -20,5 +20,20 @@ const isAnagram = (str1, str2) => {
     return true;
 };
 
+// console.log(isAnagrams1('heyfsd!!!!', 'yfdeh'));
 
-console.log(isAnagram('heyfsd!!!!', 'yfdeh'));
+///////// ANOTHER WAY OF SOLVING THIS ANAGRAM PROBLEM 
+
+const cleaningStr = (str) => {
+    return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+}
+
+const isAnagrams2 = (str1, str2) => {
+    const cleanStr1 = cleaningStr(str1);
+    const cleanStr2 = cleaningStr(str2);
+
+    return cleanStr1 === cleanStr2;
+
+};
+
+console.log(isAnagrams2('hey', 'yeh'));
