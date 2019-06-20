@@ -1,16 +1,41 @@
+// let bubbleSort = (inputArr) => {
+//     let len = inputArr.length; 
+//     let len = inputArr.length;
+//     let swapped;
+//     let swapped; 
+//     do {
+//         swapped = false;
+//         for (let i = 0; i < len; i++) {
+//             if (inputArr[i] > inputArr[i + 1]) {
+//                 let biggerOne = inputArr[i];
+//                 let smallerOne = inputArr[i + 1]; 
+//                 inputArr[i] = smallerOne; // inputArr[i] = smallerone
+//                 inputArr[i + 1] = biggerOne;
+//                 swapped = true;
+//             }
+//         }
+//     } while (swapped);
+//     return inputArr;
+// };
+
+
+
+
 let bubbleSort = (inputArr) => {
-    let len = inputArr.length;
+    let len = inputArr.length; 
     let swapped;
     do {
-        swapped = false;
-        for (let i = 0; i < len; i++) {
-            if (inputArr[i] > inputArr[i + 1]) {
-                let biggerOne = inputArr[i];
-                inputArr[i] = inputArr[i + 1];
-                inputArr[i + 1] = biggerOne;
-                swapped = true;
-            }
-        }
+      swapped = false;
+      for(let i = 0; i < len; i++){
+          if(inputArr[i] > inputArr[i+1]){
+              let biggerOne = inputArr[i]; 
+              let smallerOne = inputArr[i+1]; 
+              inputArr[i] = smallerOne; 
+              inputArr[i+1] = biggerOne; 
+              swapped = true; 
+          }
+      }
+
     } while (swapped);
     return inputArr;
 };
