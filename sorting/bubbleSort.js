@@ -58,7 +58,7 @@ DSA BUBBLE SORT : =>
         b0 Set Ptr: = PTR + 1. [inner Loop end];
        [Step 1 Outer loop end ] 
 
-4: Exit 
+4: Exit    =>>  
 
 
 
