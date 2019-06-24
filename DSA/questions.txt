@@ -1,0 +1,13 @@
+short questions:>
+1.tinti songkar maddome boro  songkhati ber korar algorithm likho.
+2.data and information er modde parthokko .
+3.flow charte babohito protiker name and kaj likho. 
+4.link list and array er modde parthoko .
+5.LIFO AND FIFO er modde parthokko likho.
+6.tree and heap er modde parthokko likho.
+7.binary search and linear search er modde parthokko.
+8.link list traversing algorithm likho 
+9.PUSH AND POP moddle parthokko likho 
+10.Stack e upadan biyojon korar  algorithm likho.
+11.infix,postfix,prefix conversion
+12.garbeg collection, over flow and underflow somporkhe alochona koro.
