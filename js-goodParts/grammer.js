@@ -7,3 +7,4 @@ const obj = {
 obj.return = 'get another life'
 
 console.log(obj);
+console.log('')
